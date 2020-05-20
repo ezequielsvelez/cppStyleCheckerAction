@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 
 COPY entrypoint.sh /entrypoint.sh
-COPY nsiqcppstyle.py /nsiqcppstyle/nsiqcppstyle.py
+COPY nsiqcppstyle/* /nsiqcppstyle/
 
 ENTRYPOINT ["/entrypoint.sh"]
