@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
-CODEFOLDERS=$1
-FILTERLOCATION=$2
+FILTERLOCATION=$1
+CODEFOLDERS=$2
 
 report=$(python3 /nsiqcppstyle/nsiqcppstyle.py --output csv -f "$FILTERLOCATION" "$CODEFOLDERS")
 
